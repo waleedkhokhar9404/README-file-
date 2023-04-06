@@ -1,0 +1,108 @@
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Design Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section id="section1">
+      <div class="section-title">Chicken</div>
+      <div class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum consectetur ex, sit amet bibendum velit. Nulla facilisi. Pellentesque iaculis nulla et mauris aliquet sagittis. Fusce ac urna dictum, posuere elit ac, malesuada lacus.</div>
+    </section>
+    <section id="section2">
+      <div class="section-title">Beef</div>
+      <div class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum consectetur ex, sit amet bibendum velit. Nulla facilisi. Pellentesque iaculis nulla et mauris aliquet sagittis. Fusce ac urna dictum, posuere elit ac, malesuada lacus.</div>
+    </section>
+    <section id="section3">
+      <div class="section-title">Sushi</div>
+      <div class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum consectetur ex, sit amet bibendum velit. Nulla facilisi. Pellentesque iaculis nulla et mauris aliquet sagittis. Fusce ac urna dictum, posuere elit ac, malesuada lacus.</div>
+    </section>
+  </div>
+</body>
+</html>
+CSS File (style.css):
+
+css
+Copy code
+/* Default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 992px;
+  margin: auto;
+}
+
+section {
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+  section {
+    width: 33.33%;
+    float: left;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  #section1, #section2 {
+    width: 50%;
+    float: left;
+  }
+  #section3 {
+    width: 100%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  section {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* Optional: Font family and size */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+.section-title {
+  font-size: 1.25em;
+}
+
+.section-text {
+  font-size: 1em;
+}
+In this example, we have created an HTML file with a container div that holds three section divs, each with a unique ID. We have also created divs for the section title and section text within each section div.
+
+In the CSS file, we have set the default styles for all elements, as well as some styles for the container and
+
+
+
+
+
